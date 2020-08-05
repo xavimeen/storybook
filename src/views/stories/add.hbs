@@ -1,0 +1,33 @@
+<h3>Agregar historia</h3>
+<div class="row">
+    <form action="/stories" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title">
+                <label for="title">Título</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select name="status" id="status">
+                    <option value="public" selected>Público</option>
+                    <option value="private">Privado</option>
+                </select>
+                <label for="status">Estado</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>Cuéntanos tu historia:</h5>
+                <textarea name="body" id="body"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancelar</a>
+        </div>
+    </form>
+</div>
